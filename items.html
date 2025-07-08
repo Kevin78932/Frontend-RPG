@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RPG - Gestión de Ítems</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Gestión de Ítems</h1>
+
+  <form id="form-item">
+    <input type="hidden" id="item-id" />
+    <input type="text" id="nombre" placeholder="Nombre" required />
+    <input type="text" id="tipo" placeholder="Tipo" required />
+    <input type="number" id="poder" placeholder="Poder" min="0" required />
+    <button type="submit">Guardar</button>
+    <button type="button" id="cancelar" style="display:none;">Cancelar</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Tipo</th>
+        <th>Poder</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="tabla-items"></tbody>
+  </table>
+
+  <a href="personajes.html">Ir a Personajes</a>
+
+  <script src="items.js"></script>
+</body>
+</html>

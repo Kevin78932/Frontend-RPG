@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RPG - Gestión de Personajes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Gestión de Personajes</h1>
+
+  <form id="form-personaje">
+    <input type="hidden" id="personaje-id" />
+    <input type="text" id="nombre" placeholder="Nombre" required />
+    <input type="number" id="nivel" placeholder="Nivel" min="1" required />
+    <select id="claseId" required></select>
+    <button type="submit">Guardar</button>
+    <button type="button" id="cancelar" style="display:none;">Cancelar</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Nivel</th>
+        <th>Clase</th>
+        <th>Ítems (Cantidad y nombres)</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="tabla-personajes"></tbody>
+  </table>
+
+  <a href="items.html">Ir a Ítems</a>
+
+  <script src="personajes.js"></script>
+</body>
+</html>
